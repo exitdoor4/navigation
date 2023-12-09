@@ -1,0 +1,56 @@
+body {
+    text-align: center;
+}
+
+#map {
+    width: 80%;
+}
+
+.control {
+    width: 80%;
+}
+
+input {
+    background-color: #b3b3b3;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 12px;
+    margin: 5px;
+}
+
+.control {
+    padding-bottom: 200px;
+}
+
+#video {
+    width: 300px;
+    height: 300px;
+    display: inline;
+    padding-right: 50px;
+}
+
+#gostop {
+    display: inline;
+    position: absolute;
+    padding-left: 50px;
+}
+
+#btn_start {
+    background-color: #6b6b6b;
+}
+
+#add {
+    position: absolute;
+    display: inline;
+    padding-top: -50px;
+    padding-left: 300px;
+}
+
+#btn_add {
+    background-color: #4a6bd6;
+}

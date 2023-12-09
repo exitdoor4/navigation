@@ -1,0 +1,39 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"> -->
+        <link rel="stylesheet" href="../static/css/style.css">
+        <title>STREAMING</title>
+    </head>
+<body>
+    <div class="container">
+        <div>
+            <div class="row">
+            <div class="col-lg-8  offset-lg-2">
+                    <h3 class="mt-5">Live Streaming</h3> 
+                    <img src="{{ url_for('Stream') }}" id="map"> 
+                </div>
+            </div>
+        </div>
+        <div class="control">
+            <div id="video">
+                <video width="320" height="240" controls>
+                    <source src="movie.mp4" type="video/mp4">
+                    <source src="movie.ogg" type="video/ogg">
+                  Your browser does not support the video tag.
+                  </video>
+            </div>
+            <div id="gostop">
+                <input type="button" value="start" id="btn_start">
+                <input type="button" value="stop" id="btn_stop">
+            </div>
+            <div id="add">
+                <input type="button" value="add" id="btn_add">
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>

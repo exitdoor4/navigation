@@ -1,0 +1,109 @@
+body {
+    text-align: center;
+}
+
+.Graphic {
+    width: 90%;
+    height: 80%;
+    border : 4px dashed #000000;
+    display: inline-block;
+}
+.Map {
+    
+    width:48%;
+    height:100%;
+    float: right;
+    border : 4px dashed #000000;
+}
+#map {
+    padding: 10%;
+}
+
+.Camera {
+
+    width:48%;
+    height:100%;
+    border : 4px dashed #000000;
+    float: left;
+
+}
+
+.controls {
+
+    width:90%;
+    height:10%;
+    border : 4px dashed #000000;
+    display: inline-block;
+}
+
+.GoStop {
+    border : 4px dashed blue;
+    width:47%;
+    height:100%;
+    float:left;
+    display: inline;
+}
+
+.Navi {
+    border : 4px dashed red;
+    width:47%;
+    height:100%;
+    float:right;
+    display: inline;
+}
+
+.EngineState {
+    background-color:blue;
+    width:100px;
+    display:inline-block;
+
+}
+#Add, #Delete, #Go, #Stop {
+    display:inline;
+    float: right;
+}
+
+button {
+    background-color : red;
+    width:200px;
+    height:60px;
+    font-size: 30px;
+}
+
+@media (max-width: 1096px) {
+    button {
+        background-color : blue;
+        width:100px;
+        height:30px;
+        font-size: 20px;
+    }
+}
+
+@media (max-width: 400px) {
+
+    button {
+        background-color : black;
+        width: 75px;
+        height:50px;
+        font-size: 10px;
+    }
+    .Map {
+        width:100%;
+        height:50%;
+        border : 4px dashed #000000;
+        float: none;
+    }
+    .Camera {
+    
+        width:100%;
+        height:50%;
+        border : 4px dashed #000000;
+        float: none;
+    }
+    #map {
+        width: 100%;
+        height: 100%;
+        padding: 0px;
+    }
+
+}

@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <!-- <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css')}}"> -->
+        <link rel="stylesheet" href="../static/css/style.css">
+        <title>STREAMING</title>
+    </head>
+<body>
+    <div class = "Graphic">
+        <div class ="Camera">
+            <div>
+                <div class="row">
+                    <div class="col-lg-8  offset-lg-2">
+                        <img src="{{ url_for('Stream') }}" id="map"> 
+                    </div>
+                </div>
+            </div>
+        </div>    
+        <div class ="Map" >
+            <video width="320" height="160" controls>
+                <source src="movie.mp4" type="video/mp4">
+                <source src="movie.ogg" type="video/ogg">
+                Your browser does not support the video tag.
+            </video>
+        </div>
+        
+    </div>
+    <div class ="controls">
+        <div class ="Navi">
+            <div id= "Add" >
+                <button name = "btn_add" type = "submit">Add</button>
+            </div>
+            <div id="Delete" >
+                <button name = "btn_delete" type = "submit">Delete</button>
+            </div>
+        </div>
+    
+        <div class="GoStop">
+            <div class = "EngineState">
+                {{ forward_message }}
+            </div>
+            <form action = "/forward/" method = "post" >
+                <button name = "btn_start" type = "submit">start</button>
+            </form>
+            <div id="Stop" >
+                <button name = "btn_stop" type = "submit">stop</button>
+            </div>
+        </div>
+    </div>
+    
+    
+</body>
+</html>
